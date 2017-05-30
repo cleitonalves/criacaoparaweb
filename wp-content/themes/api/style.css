@@ -1,0 +1,158 @@
+/*
+Theme Name: API REST
+Theme URI: http://localhost/testes/criacaoparaweb/wordpress
+Author: Cleiton Alves
+Author URI: http://www.criacaoparaweb.com.br
+Template: twentyfifteen
+Description: Tema filho de Twenty Fifteen baseado na WP API REST
+Version: 1.0
+License: GNU General Public License
+License URI: license.txt
+Text Domain: criacaoparaweb
+Tags: 
+
+Este tema, assim como Wordpress, e licenciado sobre a GPL.
+Use-o para fazer algo legal, se divertir, e compartilhar o que voce aprendeu com os outros.
+
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Abel');
+
+/*-------------------------------------------------------------
+  HTML Elements
+-------------------------------------------------------------*/
+* {
+	font-family: 'Raleway', sans-serif;
+	font-weight: 100;
+}
+
+body {
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale; 
+	text-rendering: optimizeLegibility !important;
+	-webkit-text-rendering: optimizeLegibility !important;
+}
+
+body:before {
+	background-color: rgba(0,0,0,.5) !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Abel', 'Roboto Condensed', sans-serif !important;
+}
+
+/*-------------------------------------------------------------
+  General Classes
+-------------------------------------------------------------*/
+.cover {
+	background-size: cover;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+}
+.transition {
+	-webkit-transition: all .125s ease-in-out;
+	-moz-transition: all .125s ease-in-out;
+	-o-transition: all .125s ease-in-out;
+	transition: all .125s ease-in-out;
+}
+.wrapper {
+	display: table;
+	height: 100%;
+	width: 100%;
+}
+.inner {
+	display: table-cell;
+	vertical-align: middle;
+}
+
+/*-------------------------------------------------------------
+  Branding
+-------------------------------------------------------------*/
+.site-branding * {
+	font-family: 'Abel', 'Roboto Condensed', sans-serif;
+	text-transform: uppercase;
+}
+
+/*-------------------------------------------------------------
+  Main Navigation
+-------------------------------------------------------------*/
+.main-navigation a {
+	font-family: 'Abel', 'Roboto Condensed', sans-serif;
+	text-transform: uppercase;
+}
+
+/*-------------------------------------------------------------
+  Masonry
+-------------------------------------------------------------*/
+.ms-item {
+	width: 32.8333%;
+}
+
+/*-------------------------------------------------------------
+  Front Page
+-------------------------------------------------------------*/
+.home, 
+.home a {
+	color: rgba(255,255,255,.9);
+}
+.home a:hover,
+.home a:focus {
+	color: rgba(255,255,255,.6);
+}
+.home .site-main > article.hentry {
+    background-color: transparent;
+    box-shadow: none;
+}
+.home .site-main > article.hentry > .entry-header, 
+.home .site-main > article.hentry .entry-footer {
+    display: none;
+}
+
+/*-------------------------------------------------------------
+  Home
+-------------------------------------------------------------*/
+#home h1 {
+	hyphens: none;
+}
+
+/*-------------------------------------------------------------
+  Projetos
+-------------------------------------------------------------*/
+.projetos-item {
+	background-color: transparent;
+	box-shadow: none;
+	margin: auto 0.5% 0.5% auto !important;
+}
+.projetos-item .post-thumbnail {
+	border-bottom: 1px solid #DEDEDE;
+	margin: auto !important;
+}
+.projetos-item .entry-title {
+    margin-top: 0.8205em;
+    font-size: 2rem;
+    color: #777;
+    text-transform: uppercase;
+}
+
+/*-------------------------------------------------------------
+  Blog
+-------------------------------------------------------------*/
+.feeds-item {
+	background-color: #EFEFEF;
+	box-shadow: none;
+	margin: auto 0.5% 0.5% auto !important;
+}
+.feeds-item * {
+	color: #222;
+}
+.feeds-item h1 {
+	margin-top: 0.7742em;
+}
+
+.feeds-item:hover {
+	background-color: rgba(255,255,255,.3);
+}
+.feeds-item:hover * {
+	color: #EFEFEF;
+}
